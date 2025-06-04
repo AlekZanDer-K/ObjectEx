@@ -6,19 +6,13 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        var p1 = new Person { Name = "Yury", Age = 41 };
-        var p2 = new Person { Name = "Alex", Age = 33 };
-        var p3 = new Person { Name = "Yury", Age = 41 };
+        var person1 = new Person { Name = "Дмитрий", Age = 41 };
+        var person2 = new Person { Name = "Владимир", Age = 33 };
+        var person3 = new Person { Name = "Дмитрий", Age = 41 };
+        var person4 = new Person { Name = "Ольга", Age = 27 };
 
-
-        Console.WriteLine(p1);
-
-        Console.WriteLine(p1.Equals(p2));
-
-        Console.WriteLine(p3.Equals(p1));
-
-        Console.WriteLine(p3 == p1);
-
-
+        Person.GetResultOfOperation(person1, person2);
+        Person.GetResultOfOperation(person1, person3);
+        Person.GetResultOfOperation(person4, person2);
     }
 }
