@@ -14,5 +14,6 @@ internal class Program
         Person.GetResultOfOperation(person1, person2);
         Person.GetResultOfOperation(person1, person3);
         Person.GetResultOfOperation(person4, person2);
+        Person.GetResultOfOperation(person4, null);
     }
 }
