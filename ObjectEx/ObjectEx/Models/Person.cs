@@ -58,6 +58,11 @@ public class Person
 
     public static bool operator <(Person a, Person b)
     {
+        if (a is null || b is null)
+        {
+            return false;
+        }
+
         if (a.Age < b.Age)
         {
             return true;
@@ -68,6 +73,11 @@ public class Person
 
     public static bool operator >(Person a, Person b)
     {
+        if (a is null || b is null)
+        {
+            return false;
+        }
+
         if (a.Age > b.Age)
         {
             return true;
